@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Banner */
+.header-banner {
+    height: 33vh; /* 33% of viewport height */
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-banner nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.main-content blockquote {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.main-content hr {
+    border: 0;
+    height: 1px;
+    background: #bdc3c7;
+    margin: 30px 0;
+}
+
+/* List Section */
+.list-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.list-section li {
+    margin-bottom: 10px;
+}
+
+/* Image Section */
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button Section */
+.button-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button-section .button-link {
+    background-color: #e67e22;
+}
+
+.button-section .button-link:hover {
+    background-color: #d35400;
+}
+
+/* Sticky Banners */
+.left-sticky-banner,
+.right-sticky-banner {
+    position: fixed;
+    top: 33vh; /* Start below the header */
+    height: 50vh; /* 50% of viewport height */
+    width: 7.5%; /* 7.5% of viewport width */
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-sticky-banner {
+    left: 0;
+}
+
+.right-sticky-banner {
+    right: 0;
+}
+
+.left-sticky-banner img,
+.right-sticky-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Banner */
+.footer-banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.footer-banner img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-buttons .button-link {
+    background-color: #3498db;
+}
+
+.footer-buttons .button-link:hover {
+    background-color: #2980b9;
+}
