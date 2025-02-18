@@ -11,13 +11,15 @@ body {
     background-color: #f4f4f4;
     color: #333;
     overflow-x: hidden;
-    /* Prevent horizontal scroll */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 /* Header Banner */
 .Isynseori {
     height: 33vh;
-    /* 33% of viewport height */
     background-color: #2c3e50;
     display: flex;
     justify-content: center;
@@ -92,12 +94,14 @@ nav a:hover {
 
 /* Main Content */
 .main-content {
-    margin: 20px auto;
+    flex: 1;
+    margin: 0 auto;
     padding: 20px;
     max-width: 800px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
 .main-content h1 {
@@ -108,6 +112,27 @@ nav a:hover {
 
 .main-content h2 {
     font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.main-content h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.main-content h4 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.main-content h5 {
+    font-size: 1.4rem;
     margin-top: 30px;
     margin-bottom: 15px;
     color: #3498db;
@@ -172,11 +197,8 @@ nav a:hover {
 .right-sticky-banner {
     position: fixed;
     top: 33vh;
-    /* Start below the header */
     height: 50vh;
-    /* 50% of viewport height */
     width: 7.5%;
-    /* 7.5% of viewport width */
     background-color: #34495e;
     display: flex;
     justify-content: center;
@@ -200,16 +222,70 @@ nav a:hover {
 
 /* Footer Banner */
 .footer-banner {
-    text-align: center;
-    padding: 20px;
     background-color: #2c3e50;
     color: #fff;
-    margin-top: 20px;
+    padding: 20px;
 }
 
 .footer-banner img {
     max-width: 300px;
-    /* Keep it controlled */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-buttons .button-link {
+    background-color: #3498db;
+}
+
+.footer-buttons .button-link:hover {
+    background-color: #2980b9;
+}
+
+/* Animated Gradient for Header and Footer */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.Isynseori {
+    height: 33vh;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #2c3e50, #8e44ad, #27ae60, #f3f3f3, #2c3e50);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+.footer-banner {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    background: linear-gradient(45deg, #2c3e50, #8e44ad, #27ae60, #f3f3f3, #2c3e50);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+.footer-banner img {
+    max-width: 300px;
     height: auto;
     margin-bottom: 20px;
 }
