@@ -10,12 +10,14 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
 }
 
 /* Header Banner */
-.header-banner {
-    height: 33vh; /* 33% of viewport height */
+.Isynseori {
+    height: 33vh;
+    /* 33% of viewport height */
     background-color: #2c3e50;
     display: flex;
     justify-content: center;
@@ -24,13 +26,14 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header-banner nav {
+.Isynseori nav {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.button-link {
+/* Navigation Button Styling */
+nav a {
     text-decoration: none;
     color: #fff;
     background-color: #3498db;
@@ -39,7 +42,50 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.button-link:hover {
+nav a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Button Classes Updated */
+.Home,
+.About-Us,
+.Ko’eshvelarïçé-Language,
+.Isynseori-Codex,
+.Philosophy-Governance,
+.Projects,
+.Archives,
+.Forum,
+.Lexicon-Language-Tools,
+.Media-Artifacts,
+.Events-Gatherings,
+.Join-the-Movement,
+.GitHub-Codebase,
+.Contact-Support,
+.Privacy-Policy-Terms {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Home:hover,
+.About-Us:hover,
+.Ko’eshvelarïçé-Language:hover,
+.Isynseori-Codex:hover,
+.Philosophy-Governance:hover,
+.Projects:hover,
+.Archives:hover,
+.Forum:hover,
+.Lexicon-Language-Tools:hover,
+.Media-Artifacts:hover,
+.Events-Gatherings:hover,
+.Join-the-Movement:hover,
+.GitHub-Codebase:hover,
+.Contact-Support:hover,
+.Privacy-Policy-Terms:hover {
     background-color: #2980b9;
     transform: scale(1.05);
 }
@@ -125,9 +171,12 @@ body {
 .left-sticky-banner,
 .right-sticky-banner {
     position: fixed;
-    top: 33vh; /* Start below the header */
-    height: 50vh; /* 50% of viewport height */
-    width: 7.5%; /* 7.5% of viewport width */
+    top: 33vh;
+    /* Start below the header */
+    height: 50vh;
+    /* 50% of viewport height */
+    width: 7.5%;
+    /* 7.5% of viewport width */
     background-color: #34495e;
     display: flex;
     justify-content: center;
@@ -159,7 +208,8 @@ body {
 }
 
 .footer-banner img {
-    max-width: 100%;
+    max-width: 300px;
+    /* Keep it controlled */
     height: auto;
     margin-bottom: 20px;
 }
